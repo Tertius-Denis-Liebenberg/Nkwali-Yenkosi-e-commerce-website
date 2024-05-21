@@ -1,0 +1,65 @@
+/* Main product stypling */
+section#products{
+    padding: 20px;
+}
+
+section#products h1{
+    text-align: center;
+}
+
+section#products hr{
+    margin: 20px auto;
+}
+
+/* Product container styling */
+div#productContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+	width: 100%;
+	max-width: 1280px;
+	margin: auto;
+}
+
+/* Styling product imports from js documenta  */
+div#productContainer > div{
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px #ccc;
+    padding: 10px;
+    margin-bottom: 36px;
+    min-height: 500px;
+    text-align: center;
+}
+
+div#productContainer > div h3{
+    text-transform: uppercase;
+}
+
+div#productContainer > div h4{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+div#productContainer > div p strike{
+    font-size: 12px;
+    margin-right: 10px;
+    color: lightgray;
+}
+
+div#productContainer > div button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: lightslategray;
+    background-image: url('/assets/Trolley.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    position: relative;
+    top: 40px;
+    cursor: pointer;
+}

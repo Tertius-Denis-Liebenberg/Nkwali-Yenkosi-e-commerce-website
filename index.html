@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Shop Now</title>
+	<!-- css Document links -->
+	<link rel="stylesheet" href="CSS/index.css" type="text/css" />
+	<link rel="stylesheet" href="CSS/Navigation.css" type="text/css" />
+	<link rel="stylesheet" href="CSS/Products.css" type="text/css" />
+	<link rel="stylesheet" href="CSS/Footer.css" type="text/css" />
+	<link rel="stylesheet" href="CSS/Cart.css" type="text/css" />
+	<!-- fontawesome link -->
+	<script src="https://kit.fontawesome.com/6608b2cf6c.js" crossorigin="anonymous"></script>
+	<!-- js links -->
+	<script src="js/hamburger-dislpay.js"></script>
+	<script src="js/Shop Now js.js"></script>
+	<script src="js/products.js"></script>
+	<script src="js/cart.js"></script>
+	<!-- JS index -->
+	<script src="js/index.js"></script>
+</head>
+
+<body>
+	<!-- Top navigational bar -->
+	<nav class="TopNav">
+		<!-- Social media icons -->
+		<div id="socialIcons">
+			<a href="https://instagram.com" target="_blank"><img src="assets/Instagram.png" alt="instagram" /></a>
+			<a href="https://twitter.com" target="_blank"><img src="assets/Twitter.png" alt="twitter" /></a>
+			<a href="https://facebook.com" target="_blank"><img src="assets/facebook.png" alt="facebook" /></a>
+		</div>
+		<!-- Navigational bar logo -->
+		<div id="navLogo">
+			<p>Inkwal</p>
+			<img src="assets/Rhino.png" alt="logo" />
+			<p>Yenkosi</p>
+		</div>
+		<!-- Drop down menu -->
+		<div id="hamburgerMenu">
+			<!-- Opening drop down menu -->
+			<button id="openMenu" type="button" onclick="toggleMenu(this)">
+				<i class="fa fa-bars"></i>
+			</button>
+			<!-- Within drop down menu -->
+			<div id="inMenu">
+				<!-- Drop down menu content -->
+				<nav id="menu">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About the leather</a></li>
+						<li><a href="#">DIY Methods</a></li>
+						<li><a href="#">Brick & Mortar</a></li>
+						<li><a href="/">Shop Now</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</nav>
+	<!-- Main head image -->
+	<img src="assets/products.jpg" alt="products" id="headerImage" />
+	<!-- Shop products -->
+	<section id="products">
+		<h1>Shop Now!</h1>
+		<hr width="50%" />
+		<!-- Displays all products -->
+		<div id="productContainer"></div>
+	</section>
+	<div id="cart">
+		<button type="button" onclick="closeCart()">
+			<i class="fa fa-times"></i>
+		</button>
+		<div id="cartItems"></div>
+		<div id="subtotal">
+			<p>Subtotal: <span>R 0.00</span></p>
+			<button type="button" onclick="checkout()">Checkout</button>
+		</div>
+	</div>
+	<footer>
+		<div>
+			<h3>This website was designed by Tertius Liebenberg 9205 and ALL copyrights are reserved</h3>
+			<hr width="100px" />
+			<nav>
+				<ul>
+					<li><a>DIY</a></li>
+					<li><a>About</a></li>
+					<li><a>Home</a></li>
+					<li><a>Brick & Mortar</a></li>
+					<li><a>Shop Now</a></li>
+				</ul>
+			</nav>
+			<form name="newsletter" method="post" action="#" onsubmit="submitNewsLetter(event, this)">
+				<label>Join Our Newsletter team!</label>
+				<input type="email" placeholder="example@gmail.com" name="email" />
+				<button type="submit">Join</button>
+			</form>
+			<div class="newsLetterOverlay">
+				<div>
+					<button type="button" onclick="closePopup()"><i class="fa fa-times"></i></button>
+					Thank youfor joining our newsletter!
+				</div>
+			</div>
+		</div>
+		<div class="footerLogo">
+		</div>
+
+	</footer>
+</body>
+
+</html>

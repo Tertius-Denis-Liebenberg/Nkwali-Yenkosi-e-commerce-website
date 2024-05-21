@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- css Document links -->
+	<link rel="stylesheet" href="CSS/index.css" type="text/css">
+	<link rel="stylesheet" href="CSS/Navigation.css" type="text/css">
+	<link rel="stylesheet" href="CSS/form.css" type="text/css">
+	<!-- fontawesome link -->
+	<script src="https://kit.fontawesome.com/6608b2cf6c.js" crossorigin="anonymous"></script>
+	<!-- js links -->
+	<script src="js/hamburger-dislpay.js"></script>
+</head>
+
+<body>
+	<nav class="TopNav">
+		<!-- Social media icons -->
+		<div id="socialIcons">
+			<a href="https://instagram.com" target="_blank"><img src="assets/Instagram.png" alt="instagram"></a>
+			<a href="https://twitter.com" target="_blank"><img src="assets/Twitter.png" alt="twitter"></a>
+			<a href="https://facebook.com" target="_blank"><img src="assets/facebook.png" alt="facebook"></a>
+		</div>
+		<!-- Navigational bar logo -->
+		<div id="navLogo">
+			<p>Inkwal</p>
+			<img src="assets/Rhino.png" alt="logo">
+			<p>Yenkosi</p>
+		</div>
+		<!-- Drop down menu -->
+		<div id="hamburgerMenu">
+			<!-- Opening drop down menu -->
+			<button id="openMenu" type="button" onclick="toggleMenu(this)">
+				<i class="fa fa-bars"></i>
+			</button>
+			<!-- Within drop down menu -->
+			<div id="inMenu">
+				<!-- Drop down menu content -->
+				<nav id="menu">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About the leather</a></li>
+						<li><a href="#">DIY Methods</a></li>
+						<li><a href="#">Brick & Mortar</a></li>
+						<li><a href="/">Shop Now</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</nav>
+	<!-- User details before shipping -->
+	<div id="form">
+		<h1>Just one more step...</h1>
+		<p>Before you're new Leather Jacket can leave we need you to fill in the following form</p>
+		<form action="thank-you.html" method="post">
+			<div>
+				<fieldset>
+					<h3><span class="numbering">1</span> Customer Info</h3>
+					<input name="name" placeholder="Your Full Name*" required pattern="A-Za-z\-\'\`" />
+					<input name="email" placeholder="Your Email*" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+					<input name="phone number" placeholder="Your Phone Number*" required pattern="[0-9]{10}" />
+				</fieldset>
+				<fieldset>
+					<h3><span class="numbering">2</span> Shipping Details</h3>
+					<input name="address" placeholder="Your Street Number and Name*" required pattern="[0-9A-Za-z\-\'\`]" />
+					<input name="city" placeholder="Your City*" required pattern="[A-Za-z\-\'\`]" />
+					<input name="suburb" placeholder="Your Suburb*" required pattern="[A-Za-z\-\'\`]" />
+					<select>
+						<option>Gauteng</option>
+						<option>Free State</option>
+						<option>Eastern Cape</option>
+						<option>KwaZulu-Natal</option>
+						<option>Limpopo</option>
+						<option>Mpumalanga</option>
+						<option>Northern Cape</option>
+						<option>North West</option>
+						<option>Western Cape</option>
+					</select>
+					<input name="zip" placeholder="Your ZIP Code*" required pattern="[0-9]{4,5}" />
+					<textarea placeholder="Special Instructions"></textarea>
+				</fieldset>
+				<fieldset>
+					<h3><span class="numbering">3</span> Billing Details</h3>
+					<input name="card name" placeholder="Name On Card*" required pattern="[A-Za-z\-\'\`]" />
+					<input name="card number" placeholder="Credit Card Number*" required pattern="[0-9]{16}" />
+					<input name="expire date" placeholder="Expire Date*" required pattern="\d{1,2}/\d{1,2}/\d{4}" />
+					<input name="cvv" placeholder="CVV*" required pattern="[0-9]{3}" />
+				</fieldset>
+
+			</div>
+
+			<div class="TC">
+				<label>Do you agree to our <a href="#">Terms & Conditionsa</a></label>
+				<div>
+					<label for="TC">Yes  </label><input type="radio" name="TC" value="Yes" required />
+					<label for="TC">No  </label><input type="radio" name="TC" value="No" required/>
+				</div>
+				<button>Ship Off</button>
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>

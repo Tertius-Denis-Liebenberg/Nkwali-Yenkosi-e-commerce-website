@@ -1,0 +1,88 @@
+div#form > h1,
+div#form > p {
+    text-align: center;
+}
+
+div#form > h1 {
+    margin-bottom: 20px;
+}
+
+div#form > p {
+    margin-bottom: 20px;
+}
+
+div#form form > div:first-child {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(236, 247, 247);
+}
+
+div#form form > div:first-child  > fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+div#form form > div:first-child  > fieldset input,
+div#form form > div:first-child  > fieldset select,
+div#form form > div:first-child  > fieldset textarea {
+    padding: 6px;
+    margin: 15px 0px;
+    background-color: rgb(215, 230, 235);
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+}
+
+div#form form > div:first-child  > fieldset textarea{
+    height: 100px;
+}
+
+div#form form h3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 22px;
+    margin: 10px 0px;
+}
+
+div#form form .numbering {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: black;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.TC {
+	width: 98%;
+	height: 100px;
+	padding: 20px;
+	margin-top: 4px;
+    margin-left: 10px;
+	background-color: rgb(236, 247, 247);
+}
+
+div#form form button {
+	width: 95%;
+	height: 100px;
+	padding: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+	background-color: rgb(0, 0, 0);
+	color: #fff;
+	border: none;
+	font-size: 30px;
+}
+
+.TC label a{
+    color: black;
+}

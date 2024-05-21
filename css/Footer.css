@@ -1,0 +1,51 @@
+footer {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	background-color: black;
+	color: white;
+}
+
+footer > div:first-child {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer > div hr {
+	margin: 15px auto 10px auto;
+}
+
+footer > div nav ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: gray;
+	margin-bottom: 20px;
+}
+
+footer > div nav ul li {
+	margin: 5px;
+}
+
+footer > div input {
+	padding: 4px 4px;
+}
+
+footer > div button {
+	padding: 4px;
+}
+
+footer > div.footerLogo {
+	background-image: url("/assets/LOgo.jpg");
+	background-position: center;
+	background-size: 130%;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	margin-right: 20px;
+}

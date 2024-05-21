@@ -1,0 +1,95 @@
+/*Navigation Bar Styling*/
+nav.TopNav{
+    font-family: BeteNoirA;
+    width: 100%;
+    height: 64px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styling social media icons */
+div#socialIcons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    margin-left: 12px;
+}
+
+/* Styling social media icons links */
+div#socialIcons a{
+    width: 35px;
+    height: 35px;
+    margin-left: 8px;
+}
+
+/* Styling social media icons images */
+div#socialIcons img{
+    max-height: 100%;
+    max-width: 100%;
+    transition: all .4s ease;
+}
+
+div#socialIcons img:hover{
+    transform: scale(1.75);
+}
+
+/* Styling navigational logo */
+div#navLogo{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* Styling navigational logo text */
+div#navLogo p{
+    font-size: 26px;
+}
+
+/* Styling navigational logo image */
+div#navLogo img{
+    height: 45px;
+}
+
+button#openMenu{
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+div#inMenu{
+    width: 320px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: black;
+    z-index: 1;
+    display: none;
+}
+
+nav#menu{
+    margin-top: 64px;
+}
+
+nav#menu ul{
+    list-style: none;
+    padding-left: 30px;
+}
+
+nav#menu ul li{
+    padding: 10px 0px;
+}
+
+nav#menu ul a{
+    color: white;
+    text-decoration: none;
+}
